@@ -2,12 +2,11 @@ const ra = require('remove-accents');
 const fs = require('fs');
 const util = require('util');
 const cliProgress = require('cli-progress');
-//const fnames = [ 'GerTai.xml', 'FrozenKernel.xml' ];
-const fnames = [ 'Bad Robert.json', 'gasby69154.json' ];
 
-for (var i=0; i<fnames.length; i++) {
-  doSearch(fnames[i]);
-}
+const targetFolder = './target/';
+fs.readdirSync(targetFolder).forEach(file => {
+  doSearch(targetFolder+file);
+});
 
 function doSearch(fname) {
   const target = fs.readFileSync(fname, 'utf-8');
