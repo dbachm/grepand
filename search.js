@@ -1,7 +1,17 @@
 const ra = require('remove-accents');
 const fs = require('fs');
+// overload cosole.log to log file
+const util = require('util');
+const log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'w'});
+const log_stdout = process.stdout;
+
+console.log = function(d) { //
+  log_file.write(util.format(d) + '\n');
+  log_stdout.write(util.format(d) + '\n');
+};
 const cliProgress = require('cli-progress');
-const fnames = [ 'GerTai.xml', 'FrozenKernel.xml' ];
+//const fnames = [ 'GerTai.xml', 'FrozenKernel.xml' ];
+const fnames = [ 'gasby69154.json' ];
 
 for (var i=0; i<fnames.length; i++) {
   doSearch(fnames[i]);
