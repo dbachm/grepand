@@ -4,6 +4,7 @@ const util = require('util');
 const cliProgress = require('cli-progress');
 
 const targetFolder = './target/';
+console.log(new Date().toISOString().replace('T',' ').substring(0,19), 'search started');
 fs.readdirSync(targetFolder).forEach(file => {
   doSearch(targetFolder+file);
 });
