@@ -11,8 +11,7 @@ fs.readdirSync(targetFolder).forEach(file => {
 function doSearch(fname) {
   const target = fs.readFileSync(fname, 'utf-8');
   let tLines = null;
-  tLines = target.split(/\r?\n/);
-
+  tLines = target.split(/\r?\n/).filter( n => n.length > 10);
   let fo = null;
   const bar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
   fs.readFile('wishlist', 'utf8', (err, data) => {
