@@ -1,0 +1,11 @@
+{
+  "name": "grepand",
+  "version": "1.0.0",
+  "description": "wishlist contains search strings target contains files to search",
+  "main": "search.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
