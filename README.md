@@ -6,6 +6,8 @@ requirements:
 wishlist contains search strings,
 target contains files to search
 
+# requirements
+Install [Node.js](https://nodejs.org/en/download/)
 
 # howto install
 npm install
