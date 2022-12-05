@@ -2,9 +2,8 @@
 
 grep folder of files with lines of wishlist (each line space separated, matching only lines having all words of line)
 
-requirements:
-wishlist contains search strings,
-target contains files to search
+If you only need to match with OR instead of AND, use grep regexp instead, e.g. see link:
+[How to Grep for Multiple Strings, Patterns or Words](https://phoenixnap.com/kb/grep-multiple-strings)
 
 # requirements
 Install [Node.js](https://nodejs.org/en/download/)
@@ -23,7 +22,7 @@ arthur miller zeitkurven
 ```
 
 (2)
-create a folder 'target' with files you want to grep.
+create a folder 'target' and put all files you want to grep in it.
 
 Note: It's ok if the files are larger, just avoid avoid large files without newlines,
 because grepand works line-based, also avoid binary files (for obvious reasons).
