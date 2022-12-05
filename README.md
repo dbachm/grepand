@@ -15,8 +15,10 @@ npm install
 first create file 'wishlist', simple text file with a search per line,
 each line containing the words you need to search, e.g.:
 
+```wishlist
 albert camus erste mensch epub
 arthur miller zeitkurven
+```
 
 (2)
 create a folder 'target' with files you want to grep.
