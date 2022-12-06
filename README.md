@@ -1,8 +1,10 @@
 # grepand (shortcut for grep matching word with AND)
 
-grep folder of files with lines of wishlist (each line space separated, matching only lines having all words of line)
+Reads one or more newline separated patterns from file, 
+and searches a folder of files with each line, showing all matches. 
+Similar to grep -f param, but match all words of one line (only match if target line matches all words).
 
-Note: If you only need to match with OR instead of AND, check this [guide](https://phoenixnap.com/kb/grep-multiple-strings) instead.
+Note: for using grep multiple strings, check this [guide](https://phoenixnap.com/kb/grep-multiple-strings) instead.
 
 # Requirements
 Install [Node.js](https://nodejs.org/en/download/)
