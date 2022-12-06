@@ -1,8 +1,9 @@
 # grepand (shortcut for grep matching word with AND)
 
-Reads one or more newline separated patterns from file, 
-and searches a folder of files with each line, showing all matches. 
-Similar to grep -f param, but match all words of one line (only match if target line matches all words).
+Reads one or more newline separated lines from file, 
+each line containing one or more space separated words,
+and searches a folder of files, alerting if all words of line match.
+Similar to grep -f param, but match *all* words of one line (means target line has to match all words).
 
 Note: for using grep multiple strings, check this [guide](https://phoenixnap.com/kb/grep-multiple-strings) instead.
 
