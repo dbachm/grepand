@@ -2,10 +2,7 @@
 
 grep folder of files with lines of wishlist (each line space separated, matching only lines having all words of line)
 
-Note:
-If you only need to match with OR instead of AND, use grep regexp instead
-Refer to link:
-[How to Grep for Multiple Strings, Patterns or Words](https://phoenixnap.com/kb/grep-multiple-strings)
+Note: If you only need to match with OR instead of AND, check this [guide](https://phoenixnap.com/kb/grep-multiple-strings) instead.
 
 # Requirements
 Install [Node.js](https://nodejs.org/en/download/)
